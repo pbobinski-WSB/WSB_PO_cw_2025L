@@ -6,7 +6,7 @@ public class LibrarySystem {
     static List<Map<String, Object>> library = new ArrayList<>();
 
     public static void addBook(String title, String author) {
-        library.add(new HashMap<String, Object>() {{
+        library.add(new HashMap<>() {{
             put("title", title);
             put("author", author);
             put("available", true);
