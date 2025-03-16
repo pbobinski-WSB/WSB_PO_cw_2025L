@@ -14,5 +14,10 @@ public class StarPyramid {
             System.out.println("*".repeat(2 * i - 1));
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
 
