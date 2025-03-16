@@ -9,3 +9,9 @@ def is_prime(n):
 n = int(input("Podaj liczbę: "))
 primes = [i for i in range(2, n) if is_prime(i)]
 print("Liczby pierwsze:", primes)
+
+
+for i in range(2,n):
+    if is_prime(i):
+        print(str(i) + " ",end=", ")
+            
