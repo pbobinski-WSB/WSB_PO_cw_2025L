@@ -20,5 +20,9 @@ public class StudentGrades {
         double average = sum / gradesInput.length;
         System.out.printf("Średnia ocen %s: %.2f%n", student, average);
     }
+
+    public static void robieCos(){
+        System.out.println("coś");
+    }
 }
 
