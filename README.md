@@ -5,4 +5,5 @@ Zmiana na zajęciach 1
 Kolejna zmiana, symulacja zmian przed zajęciami.
 
 I jeszcze jedna zmiana.
+
 I jeszcze jedna zmiana.
