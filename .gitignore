@@ -190,3 +190,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 /.idea/WSB_PO_cw_2025L.iml
+/WSB_PO_cw_2025L.iml
+/out/production/WSB_PO_cw_2025L/wsb/po/jeden/PO_II_Ćw_zaocz_01_zad.pdf
