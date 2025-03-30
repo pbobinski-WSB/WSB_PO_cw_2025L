@@ -33,16 +33,17 @@ class Hospital:
     def __init__(self, name, location):
         self.name = name
         self.location = location
-
+        self.doctors = []
+        self.patients = []
+    
     def __repr__(self):
         return f"Hospital name={self.name}, location={self.location}"
 
     def add_doctor(self, doctor):
-        self.doctors = []
+        
         self.doctors.append(doctor)
     
     def add_patient(self, patient):
-        self.patients = []
         self.patients.append(patient)
     
 
