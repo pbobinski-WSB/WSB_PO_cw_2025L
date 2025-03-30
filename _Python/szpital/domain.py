@@ -30,8 +30,9 @@ class Hospital:
     def __init__(self, name, location):
         self.name = name
         self.location = location
-
-
+        self.doctors = []
+        self.patients = []
+        
     def print_info(self):
         print (self)
         print (self.doctors)
@@ -39,11 +40,9 @@ class Hospital:
         
 
     def add_doctor(self, doctor):
-        self.doctors = []
         self.doctors.append(doctor)
 
     def add_patient(self, patient):
-        self.patients = []
         self.patients.append(patient)
 
     def __repr__(self):
