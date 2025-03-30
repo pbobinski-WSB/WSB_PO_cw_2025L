@@ -1,3 +1,6 @@
+
+from domain import * 
+
 # Testowanie
 if __name__ == "__main__":
     hospital = Hospital("Centralny Szpital", "Warszawa")

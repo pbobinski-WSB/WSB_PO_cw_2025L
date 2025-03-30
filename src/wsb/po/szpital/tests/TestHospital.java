@@ -1,5 +1,8 @@
 package wsb.po.szpital.tests;
 
+
+import wsb.po.szpital.domain.*;
+
 public class TestHospital {
 
     public static void main(String[] args) {

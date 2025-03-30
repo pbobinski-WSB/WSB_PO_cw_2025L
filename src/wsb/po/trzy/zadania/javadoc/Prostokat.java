@@ -12,6 +12,12 @@ public class Prostokat {
 
     /* Konstruktory klasy */
 
+    /**
+     * Opis konstruktora
+     * @param nazwa opis prosto
+     * @param bokA długość boku A
+     * @param bokB
+     */
     public Prostokat(String nazwa, double bokA, double bokB) {
         this.nazwa = nazwa;
         this.bokA = bokA;
