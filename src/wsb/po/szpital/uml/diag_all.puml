@@ -7,13 +7,20 @@ interface Schedulable {
 interface Billable {
     +calculatePay(): double
 }
+class Person {
+  +name: String
+  +age: int
+  +getInfo(): String
+}
 
+Person <|-- Patient
+Person <|-- Doctor
 abstract class Staff {
     -name: String
     -age: int
     +performDuties(): void
 }
-
+Person <|-- Staff
 
 class Nurse {
     -hourlyRate: double
