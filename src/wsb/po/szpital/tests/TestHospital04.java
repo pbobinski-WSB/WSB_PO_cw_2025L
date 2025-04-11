@@ -5,12 +5,13 @@ import wsb.po.szpital.domain.*;
 public class TestHospital04 {
 
     public static void main(String[] args) {
-        Hospital hospital = Hospital.getInstance("Szpital Miejski");
+/*
+        Hospital hospital = Hospital.getInstance("Szpital Miejski", "Warszawa");
 
         Nurse nurse = new Nurse("Anna", 28, 50, 160);
         AdministrativeStaff admin = new AdministrativeStaff("Tomasz", 35, 5000);
-        Doctor doc1 = new Doctor("Dr. Kowalski", 45, "Kardiologia",12000);
-        Doctor doc2 = new Doctor("Dr. Nowak", 50, "Ortopedia",8000);
+        Doctor doc1 = new Doctor("Dr. Kowalski", 45, "Kardiologia", 12000);
+        Doctor doc2 = new Doctor("Dr. Nowak", 50, "Ortopedia", 8000);
 
         Patient pat1 = new Patient("Jan Nowak", 30, "Nadciśnienie");
         Patient pat2 = new Patient("Anna Kowalska", 40, "Cukrzyca");
@@ -36,5 +37,6 @@ public class TestHospital04 {
         System.out.println("Wypłata lekarza: " + doc1.calculatePay() + " PLN");
         System.out.println("Wypłata admina: " + admin.calculatePay() + " PLN");
         System.out.println("Wypłata lekarza: " + doc2.calculatePay() + " PLN");
-
+*/
+    }
 }

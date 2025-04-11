@@ -1,8 +1,8 @@
 from domain import *
 
 if __name__ == "__main__":
-    hospital = Hospital("Szpital Miejski")
-
+    hospital = Hospital("Szpital Miejski", "Warszawa")
+'''
     nurse = Nurse("Anna", 28, 50, 160)
     admin = AdministrativeStaff("Tomasz", 35, 5000)
 
@@ -33,3 +33,4 @@ if __name__ == "__main__":
     print(f"Wypłata lekarza: {doc1.calculate_pay()} PLN")
     print(f"Wypłata admina: {admin.calculate_pay()} PLN")
     print(f"Wypłata lekarza: {doc2.calculate_pay()} PLN")
+'''
