@@ -1,0 +1,49 @@
+@startuml
+
+interface Schedulable {
+    +schedule(timeSlot: String)
+}
+
+interface Billable {
+    +calculatePay(): double
+}
+
+abstract class Staff {
+    -name: String
+    -age: int
+    +performDuties(): void
+}
+
+
+class Nurse {
+    -hourlyRate: double
+    -hoursWorked: int
+    +performDuties(): void
+    +schedule(timeSlot: String): void
+    +calculatePay(): double
+}
+
+class AdministrativeStaff {
+    -monthlySalary: double
+    +performDuties(): void
+    +calculatePay(): double
+}
+
+
+class Doctor {
+    -specialization: String
+    -monthlySalary: double
+    +diagnose(): void
+    +calculatePay(): double
+}
+
+Staff <|-- Nurse
+Staff <|-- AdministrativeStaff
+
+Nurse ..|> Schedulable
+Nurse ..|> Billable
+AdministrativeStaff ..|> Billable
+Doctor ..|> Billable
+
+@enduml
+

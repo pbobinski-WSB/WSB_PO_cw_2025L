@@ -1,0 +1,46 @@
+@startuml
+
+abstract class Staff {
+    -name: String
+    -age: int
+    +performDuties(): void
+}
+
+class Doctor {
+    -specialization: String
+    -monthlySalary: double
+    +diagnose(): void
+    +calculatePay(): double
+}
+
+class Patient {
+    -id: int
+    -name: String
+    +receiveTreatment(): void
+}
+
+class Department {
+    -name: String
+    -staffList: List<Staff>
+    -doctors: List<Doctor>
+    -patients: List<Patient>
+    +addStaff(staff: Staff): void
+    +addDoctor(doc: Doctor): void
+    +addPatient(p: Patient): void
+}
+
+class Hospital <<singleton>> {
+    - Hospital()
+    + getInstance(): Hospital
+    + addDepartment(department: Department)
+    + showStructure()
+}
+
+Hospital "1" o-- "0..*" Department : posiada >
+
+Department "1" o-- "0..*" Staff : zatrudnia >
+Department "1" o-- "0..*" Doctor : zatrudnia >
+Department "1" o-- "0..*" Patient : leczy >
+
+
+@enduml
