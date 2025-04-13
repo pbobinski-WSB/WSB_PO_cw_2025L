@@ -51,8 +51,7 @@ Staff <|-- Nurse
 Staff <|-- AdministrativeStaff
 
 Nurse ..|> Schedulable
-Nurse ..|> Billable
-AdministrativeStaff ..|> Billable
+Staff ..|> Billable
 Doctor ..|> Billable
 
 @enduml

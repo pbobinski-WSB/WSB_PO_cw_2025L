@@ -2,8 +2,9 @@ from domain import *
 
 if __name__ == "__main__":
     hospital = Hospital("Szpital Miejski", "Warszawa")
-'''
+    print(hospital)
     nurse = Nurse("Anna", 28, 50, 160)
+
     admin = AdministrativeStaff("Tomasz", 35, 5000)
 
     doc1 = Doctor("Dr. Kowalski", 45, "Kardiologia",12000)
@@ -30,7 +31,7 @@ if __name__ == "__main__":
 
     nurse.schedule("Poniedziałek 8:00")
     print(f"Wypłata pielęgniarki: {nurse.calculate_pay()} PLN")
+
     print(f"Wypłata lekarza: {doc1.calculate_pay()} PLN")
     print(f"Wypłata admina: {admin.calculate_pay()} PLN")
     print(f"Wypłata lekarza: {doc2.calculate_pay()} PLN")
-'''

@@ -46,10 +46,9 @@ class Doctor {
 
 Staff <|-- Nurse
 Staff <|-- AdministrativeStaff
+Staff ..|> Billable
 
 Nurse ..|> Schedulable
-Nurse ..|> Billable
-AdministrativeStaff ..|> Billable
 Doctor ..|> Billable
 
 
