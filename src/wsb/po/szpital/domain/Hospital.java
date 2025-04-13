@@ -3,41 +3,60 @@ package wsb.po.szpital.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hospital {
+public enum Hospital {
+
+    instance("","");
+
+//    public static Hospital getInstance(String name, String location) {
+//        if (instance == null) {
+//            instance = new Hospital(name, location);
+//        }
+//        return instance;
+//    }
 
     private String name;
     private String location;
 
-    private List<Doctor> doctors = new ArrayList<>();
-    private List<Patient> patients = new ArrayList<>();
+    private List<Department> departments = new ArrayList<>();
 
-    public Hospital(String name, String location) {
-        this.name = name;
-        this.location = location;
+    public void addDepartment(Department department){
+        departments.add(department);
+    }
+
+    Hospital(String name, String location) {
+        this.setName(name);
+        this.setLocation(location);
     }
 
     @Override
     public String toString() {
         return "Hospital{" +
-                "name='" + name + '\'' +
-                ", location='" + location + '\'' +
+                "name='" + getName() + '\'' +
+                ", location='" + getLocation() + '\'' +
                 '}';
     }
 
-    public void printInfo() {
-        System.out.println(this.toString());
-        System.out.println(doctors);
-        //System.out.println(patients);
-        for (Patient p : patients) {
-            System.out.println(p.getInfo());
-        }
+    public void showStructure(){
+        System.out.println("Struktura szpitala");
+        System.out.println(this);
+        System.out.println("Departamenty "+departments);
+        //TODO
     }
 
-    public void addDoctor(Doctor d) {
-        doctors.add(d);
+
+    public String getName() {
+        return name;
     }
 
-    public void addPatient(Patient p) {
-        patients.add(p);
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }

@@ -9,6 +9,10 @@ public class Patient extends Person{
         this.medicalHistory = medicalHistory;
     }
 
+    public void receiveTreatment(){
+        System.out.println("Jest leczony");
+    }
+
     @Override
     public String toString() {
         return "Patient{" +
