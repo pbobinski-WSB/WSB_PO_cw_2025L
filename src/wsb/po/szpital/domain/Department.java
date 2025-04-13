@@ -5,15 +5,15 @@ import java.util.List;
 
 public class Department {
 
-    private String name;
+    private final String name;
 
     public Department(String name) {
         this.name = name;
     }
 
-    private List<Doctor> doctors = new ArrayList<>();
-    private List<Patient> patients = new ArrayList<>();
-    private List<Staff> staff = new ArrayList<>();
+    private final List<Doctor> doctors = new ArrayList<>();
+    private final List<Patient> patients = new ArrayList<>();
+    private final List<Staff> staff = new ArrayList<>();
 
     public void addDoctor(Doctor d) {
         doctors.add(d);

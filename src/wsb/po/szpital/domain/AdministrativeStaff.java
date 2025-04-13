@@ -2,7 +2,7 @@ package wsb.po.szpital.domain;
 
 public class AdministrativeStaff extends Staff{
 
-    private double monthlySalary;
+    private final double monthlySalary;
 
     public AdministrativeStaff(String name, int age, double monthlySalary) {
         super(name, age);

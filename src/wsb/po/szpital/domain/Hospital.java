@@ -17,7 +17,7 @@ public enum Hospital {
     private String name;
     private String location;
 
-    private List<Department> departments = new ArrayList<>();
+    private final List<Department> departments = new ArrayList<>();
 
     public void addDepartment(Department department){
         departments.add(department);

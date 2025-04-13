@@ -2,8 +2,8 @@ package wsb.po.szpital.domain;
 
 public class Nurse extends Staff implements Schedulable{
 
-    private double hourlyRate;
-    private int hoursWorked;
+    private final double hourlyRate;
+    private final int hoursWorked;
 
     public Nurse(String name, int age, double hourlyRate, int hoursWorked) {
         super(name,age);

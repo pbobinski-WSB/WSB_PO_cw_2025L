@@ -2,8 +2,8 @@ package wsb.po.szpital.domain;
 
 public class Doctor extends Person implements Billable{
 
-    private String specialization;
-    private  double monthlySalary;
+    private final String specialization;
+    private final double monthlySalary;
 
 
     public Doctor(String name, int age, String specialization, double monthlySalary) {

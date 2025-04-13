@@ -2,7 +2,7 @@ package wsb.po.szpital.domain;
 
 public class Patient extends Person{
 
-    private String medicalHistory;
+    private final String medicalHistory;
 
     public Patient(String name, int age, String medicalHistory) {
         super(name, age);
